@@ -1,0 +1,37 @@
+### List all driver with a limit of 10
+GET http://localhost:8000/api/driver?limit=10
+Content-Type: application/json
+
+### Get a driver by ID
+GET http://localhost:8000/api/driver/1
+Content-Type: application/json
+
+### Create a new driver
+POST http://localhost:8000/api/driver
+Content-Type: application/json
+
+{
+   "name":"car",
+  "state_id": 1,
+  "car_make":"Toyota",
+  "car_model":"Prado",
+  "car_year": 2024,
+  "user_id": 1,
+  "online": true,
+  "delivering": true
+  
+    
+}
+
+
+### Update a driver by ID
+PUT http://localhost:8000/api/driver/1
+Content-Type: application/json
+
+{
+    "car_year": 2023
+}
+
+### Delete a driver by ID
+DELETE http://localhost:8000/api/driver/1
+Content-Type: application/json

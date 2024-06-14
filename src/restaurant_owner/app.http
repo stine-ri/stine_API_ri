@@ -1,0 +1,40 @@
+### List all restaurant_owner with a limit of 10
+GET http://localhost:8000/api/restaurant_owner?limit=10
+Content-Type: application/json
+
+### Get a resturant_owner by ID
+GET http://localhost:8000/api/restaurant_owner/1
+Content-Type: application/json
+
+### Create a new resturant_owner
+POST http://localhost:8000/api/restaurant_owner
+Content-Type: application/json
+
+{
+   "resturant_id":1,
+   "owner_id":1
+ 
+}
+
+
+### Update a resturant_owner by ID
+PUT http://localhost:8000/api/restaurant_owner/1
+Content-Type: application/application/json
+
+{
+   "owner_id":2
+}
+### Delete a resturant_owner by ID
+DELETE http://localhost:8000/api/restaurant_owner/1
+Content-Type: application/json
+//get resturant with orders
+###
+GET http://localhost:8000/api/resturant-orders
+###
+//get restaurant_owner with resturant
+###
+GET http://localhost:8000/api/resturant_owner-resturant
+###
+//get restaurant_owner with user
+###
+GET http://localhost:8000/api/getRestaurant_owner-User

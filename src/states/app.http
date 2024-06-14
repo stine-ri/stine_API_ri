@@ -1,0 +1,65 @@
+### List all states with a limit of 10
+GET http://localhost:8000/api/states?limit=10
+Content-Type: application/json
+
+### Get a state by ID
+GET http://localhost:8000/api/states/1
+Content-Type: application/json
+
+### Create a new state
+POST http://localhost:8000/api/states
+Content-Type: application/json
+
+{
+    "name": "California",
+    "code": "39538223"
+    
+}
+
+### Update a state by ID
+PUT http://localhost:8000/api/states/2
+Content-Type: application/json
+
+{
+    "name": "South Korea",
+    "code": "489653678"
+    
+}
+
+### Delete a state by ID
+DELETE http://localhost:8000/api/states/1
+Content-Type: application/json
+###
+###
+GET http://localhost:8000/api/states
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJSaXlhbiBTdG9uZSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTcxODIzMzY5N30.0AtLLbqD6K-XlHCvymwXBHgG3vM7WAJnyvDQYh1oohE
+
+###
+GET http://localhost:8000/api/states/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJSaXlhbiBTdG9uZSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTcxODIzMzY5N30.0AtLLbqD6K-XlHCvymwXBHgG3vM7WAJnyvDQYh1oohE
+
+###  
+###
+POST http://localhost:8000/api/register
+Content-Type: application/json
+
+{
+   "userId":4,
+   "username":"Riyan Stone",
+   "password":"5555",
+   "role": "admin"
+
+}
+###
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "username":"Riyan Stone",
+    "password":"5555"
+   
+}
+
+//get states with cities
+###
+GET http://localhost:8000/api/states-cities

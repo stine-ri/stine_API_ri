@@ -1,0 +1,37 @@
+### List all comment with a limit of 10
+GET http://localhost:8000/api/comment?limit=10
+Content-Type: application/json
+
+### Get a comment by ID
+GET http://localhost:8000/api/comment/1
+Content-Type: application/json
+
+### Create a new comment
+POST http://localhost:8000/api/comment
+Content-Type: application/json
+
+{
+   
+   "order_id":15 ,
+   "user_id": 7,
+  "comment_text": "perfect",
+  "is_complaint": true,
+  "is_praise": true
+    
+}
+
+
+### Update a comment by ID
+PUT http://localhost:8000/api/comment/1
+Content-Type: application/json
+
+{
+     
+  "comment_text": "lovely"
+
+    
+}
+
+### Delete a comment by ID
+DELETE http://localhost:8000/api/comment/1
+Content-Type: application/json

@@ -1,0 +1,59 @@
+
+### List all address with a limit of 10
+GET http://localhost:8000/api/register?limit=10
+Content-Type: application/json
+
+### Get a address by ID
+GET http://localhost:8000/api/register
+Content-Type: application/json
+
+###
+GET http://localhost:8000/api/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJLaW0gU29vaHl1biIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTcxODIzMjM4Mn0.HyqOrG70uS2WHI3sjWgbCjzeMLNCDadf57s7xu4Q4B0
+###
+###
+GET http://localhost:8000/api/users/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJLaW0gU29vaHl1biIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTcxODIzMjM4Mn0.HyqOrG70uS2WHI3sjWgbCjzeMLNCDadf57s7xu4Q4B0
+
+### 
+POST http://localhost:8000/api/register
+Content-Type: application/json
+
+{
+   "userId":1,
+   "username":"Christine Nyambwari",
+   "password":"3457",
+   "role": "user"
+
+}
+
+
+### 
+POST http://localhost:8000/api/register
+Content-Type: application/json
+
+{
+   "userId":2,
+   "username":"Kim Soohyun",
+   "password":"4567",
+   "role": "admin"
+
+}
+###
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "username":"Christine Nyambwari",
+    "password":"3457"
+   
+}
+###
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "username":"Kim Soohyun",
+    "password":"4567"
+   
+}

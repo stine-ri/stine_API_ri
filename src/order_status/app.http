@@ -1,0 +1,27 @@
+### List all order_status with a limit of 10
+GET http://localhost:8000/api/order_status?limit=10
+Content-Type: application/json
+
+### Get a order_status by ID
+GET http://localhost:8000/api/order_status/1
+Content-Type: application/json
+
+### Create a new order_status
+POST http://localhost:8000/api/order_status
+Content-Type: application/json
+
+{
+   "order_id": 6,
+  "status_catalog_id":1 
+    
+}
+
+
+### Update a order_status by ID
+PUT http://localhost:8000/api/order_status/1
+Content-Type: application/json
+
+
+### Delete a order_status by ID
+DELETE http://localhost:8000/api/order_status/1
+Content-Type: application/json

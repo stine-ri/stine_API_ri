@@ -1,0 +1,36 @@
+### List all resturant with a limit of 10
+GET http://localhost:8000/api/resturant?limit=10
+Content-Type: application/json
+
+### Get a resturant by ID
+GET http://localhost:8000/api/resturant/1
+Content-Type: application/json
+
+### Create a new resturant
+POST http://localhost:8000/api/resturant
+Content-Type: application/json
+
+{
+   "name":"Riyan dines",
+   "street_address":"40076",
+   "zip_code":"0432"
+    
+}
+
+
+### Update a resturant by ID
+PUT http://localhost:8000/api/resturant/2
+Content-Type: application/json
+
+{
+   "name":"Soohyun diner"
+}
+
+### Delete a resturant by ID
+DELETE http://localhost:8000/api/resturant/1
+Content-Type: application/json
+###
+
+//get resturant-orders
+###
+GET http://localhost:8000/api/resturant-orders

@@ -1,0 +1,45 @@
+### List all address with a limit of 10
+GET http://localhost:8000/api/address?limit=10
+Content-Type: application/json
+
+### Get a address by ID
+GET http://localhost:8000/api/address/1
+Content-Type: application/json
+
+### Create a new address
+POST http://localhost:8000/api/address
+Content-Type: application/json
+
+{
+   "street_address_1":"3457" ,
+   "street_address_2": "3457",
+   "zip_code": "US",
+   "delivery_instructions":"Delivery" ,
+   "user_id": 1 ,
+   "city_id":2
+    
+}
+###
+POST http://localhost:8000/api/address
+Content-Type: application/json
+
+{
+   "street_address_1":"4589" ,
+   "street_address_2": "0000",
+   "zip_code": "KE",
+   "delivery_instructions":"Delivery Instruct" ,
+   "user_id": 1 
+   
+    
+}
+
+### Update a address by ID
+PUT http://localhost:8000/api/address/1
+Content-Type: application/json
+
+{
+   "zip_code": "TZ"
+}
+### Delete a address by ID
+DELETE http://localhost:8000/api/address/1
+Content-Type: application/json

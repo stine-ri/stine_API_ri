@@ -1,0 +1,64 @@
+### List all menu_item with a limit of 10
+GET http://localhost:8000/api/menu_item?limit=10
+Content-Type: application/json
+
+### Get a menu_item by ID
+GET http://localhost:8000/api/menu_item/1
+Content-Type: application/json
+
+### Create a new menu_item
+POST http://localhost:8000/api/menu_item
+Content-Type: application/json
+
+{
+   "name":"Full cuisine",
+  "resturant_id": 1,
+  "category_id": 3,
+  "description": "all the foods are available",
+  "ingredients": "allthe ingredients are fresh",
+  "price": 2500,
+  "active":true
+    
+}
+
+
+### Update a menu_item by ID
+PUT http://localhost:8000/api/menu_item/4
+Content-Type: application/json
+
+{
+   "active":false
+}
+
+### Delete a menu_item by ID
+DELETE http://localhost:8000/api/menu_item/1
+Content-Type: application/json
+
+###
+GET http://localhost:8000/api/menu_item
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJLaW0gSHl1bmcgU29vIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzE4MjY3NTQ5fQ.6OXUvgYqr48MM3YzNlzumZYBE8VaTbN5nsU3JVClzVs
+
+###
+GET http://localhost:8000/api/menu_item/5
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJLaW0gSHl1bmcgU29vIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzE4MjY3NTQ5fQ.6OXUvgYqr48MM3YzNlzumZYBE8VaTbN5nsU3JVClzVs
+
+### 
+POST http://localhost:8000/api/register
+Content-Type: application/json
+
+{
+   "userId":2,
+   "username":"Kim Hyung Soo",
+   "password":"8990",
+   "role": "admin"
+
+}
+###
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "username":"Kim Hyung Soo",
+    "password":"8990"
+   
+}

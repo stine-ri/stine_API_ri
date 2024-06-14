@@ -1,0 +1,61 @@
+### List all status_catalog with a limit of 10
+GET http://localhost:8000/api/status_catalog?limit=10
+Content-Type: application/json
+
+### Get a status_catalog by ID
+GET http://localhost:8000/api/status_catalog/1
+Content-Type: application/json
+
+### Create a new status_catalog
+POST http://localhost:8000/api/status_catalog
+Content-Type: application/json
+
+{
+   "name":"Sales"
+
+}
+
+
+### Update a status_catalog by ID
+PUT http://localhost:8000/api/status_catalog/1
+Content-Type: application/json
+
+{
+   "name":"pass"
+  
+    
+}
+
+### Delete a status_catalog by ID
+DELETE http://localhost:8000/api/status_catalog/1
+Content-Type: application/json
+
+###
+###
+GET http://localhost:8000/api/status_catalog/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJDaHJpc3RpbmUgV2hpdGUiLCJyb2xlIjoidXNlciIsImV4cCI6MTcxODIzMjc5OH0.-eGga4CnsGGdOR9tbsPsX6BImanAgo24xzsD1Y_0vVM
+
+###
+GET http://localhost:8000/api/users/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJDaHJpc3RpbmUgV2hpdGUiLCJyb2xlIjoidXNlciIsImV4cCI6MTcxODIzMjc5OH0.-eGga4CnsGGdOR9tbsPsX6BImanAgo24xzsD1Y_0vVM
+
+### 
+POST http://localhost:8000/api/register
+Content-Type: application/json
+
+{
+   "userId":1,
+   "username":"Christine White",
+   "password":"3457",
+   "role": "user"
+
+}
+###
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "username":"Christine White",
+    "password":"3457"
+   
+}

@@ -1,0 +1,30 @@
+### List all category with a limit of 10
+GET http://localhost:8000/api/category?limit=10
+Content-Type: application/json
+
+### Get a category by ID
+GET http://localhost:8000/api/category/1
+Content-Type: application/json
+
+### Create a new category
+POST http://localhost:8000/api/category
+Content-Type: application/json
+
+{
+   "name":"Vegan"
+    
+}
+
+
+### Update a category by ID
+PUT http://localhost:8000/api/category/3
+Content-Type: application/json
+
+{
+   "name":"Salad"
+    
+}
+
+### Delete a category by ID
+DELETE http://localhost:8000/api/category/1
+Content-Type: application/json

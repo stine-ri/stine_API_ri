@@ -1,0 +1,61 @@
+### List all order_menu_item  with a limit of 10
+GET http://localhost:8000/api/order_menu_item?limit=10
+Content-Type: application/json
+
+### Get a order_menu_item by ID
+GET http://localhost:8000/api/order_menu_item/1
+Content-Type: application/json
+
+### Create a new order_menu_item
+POST http://localhost:8000/api/order_menu_item 
+Content-Type: application/json
+
+{
+  "order_id":10,
+  "menu_item_id":4,
+  "quantity":4,
+  "item_price":1400,
+  "price":3000,
+  "comment":"great"
+}
+### 
+###
+GET http://localhost:8000/api/order_menu_item
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJLaW0gSml3b24iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3MTgyNjcwNjB9.7sdW-JUWyqZppHKqRO3z3miQ_lSaun-CO9PoZYm0pfk
+
+###
+GET http://localhost:8000/api/order_menu_item/21
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJLaW0gSml3b24iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3MTgyNjcwNjB9.7sdW-JUWyqZppHKqRO3z3miQ_lSaun-CO9PoZYm0pfk
+
+### 
+POST http://localhost:8000/api/register
+Content-Type: application/json
+
+{
+   "userId":2,
+   "username":"Kim Jiwon",
+   "password":"6890",
+   "role": "admin"
+
+}
+###
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "username":"Kim Jiwon",
+    "password":"6890"
+   
+}
+
+### Update a order_menu_item by ID
+PUT http://localhost:8000/api/order_menu_item/1
+Content-Type: application/json
+
+{
+   "price":3500
+}
+
+### Delete a order_menu_item by ID
+DELETE http://localhost:8000/api/order_menu_item/1
+Content-Type: application/json

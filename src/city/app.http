@@ -1,0 +1,32 @@
+### List all city with a limit of 10
+GET http://localhost:8000/api/city?limit=10
+Content-Type: application/json
+
+### Get a city by ID
+GET http://localhost:8000/api/city/1
+Content-Type: application/json
+
+### Create a new city
+POST http://localhost:8000/api/city
+Content-Type: application/json
+
+{
+   "name":"Nakuru",
+   "city_id":1
+    
+}
+
+
+### Update a city by ID
+PUT http://localhost:8000/api/city/1
+Content-Type: application/json
+
+
+{
+   "name":"Kisii"
+  
+}
+
+### Delete a city by ID
+DELETE http://localhost:8000/api/city/1
+Content-Type: application/json
