@@ -16,11 +16,12 @@ import { status_catalogRouter } from './status_catalog/status_catalog.router'
 import { commentRouter } from './comment/comment.router'
 import { driverRouter } from './driver/driver.router'
 import { authRouter} from './auth/auth.router'
+import ejs from 'ejs'
 const app = new Hono()
 
 //default route//
 app.get('/', (c) => {
-  return c.text('the code is okay')
+  return c.html(ejs.renderFile('./src/index.html'))
 })
 
 app.route("/api",userRouter)
